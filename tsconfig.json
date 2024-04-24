@@ -24,8 +24,10 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "types": ["vitest/globals"]
   },
-  "include": ["src"],
+  "moduleResolution": "node",
+  "include": ["src", "test"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
